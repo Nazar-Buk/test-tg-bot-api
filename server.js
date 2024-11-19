@@ -30,7 +30,8 @@ app.post("/submit", async (req, res) => {
     await axios.post(
       `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
       {
-        chat_id: CHAT_ID,
+        // chat_id: CHAT_ID,
+        chat_id: GROUP_ID,
         text: message,
       }
     );
